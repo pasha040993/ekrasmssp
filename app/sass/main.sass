@@ -9,15 +9,20 @@
 	background-color: $accent
 	color: #fff
 
+html
+	position: relative
+	min-height: 100vh
+
 body
 	font-size: 16px
 	min-width: 320px
-	position: relative
+	//position: relative
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
-	background-color: #EFEFEF
+	//background-color: #EFEFEF
+	margin-bottom: 40px
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -60,7 +65,7 @@ b, strong
 	background-position: center center
 	
 .space
-	background-color: #EFEFEF
+	//background-color: #EFEFEF
 	height: 20px
 
 .header
@@ -72,37 +77,53 @@ b, strong
 	img.logo
 		margin: 9px 10px 0px 10px
 		float: left
-	ul
-		list-style: none
-		margin: 0
-		padding-left: 0
-		float: left
-		a
-			text-decoration: none
-			color: #fff
-			display: block
-			padding: 6px 12px
-			height: 40px
-			white-space: nowrap;
-		li
-			float: left			
-		li.active
-			a
-				background-color: #16C8AB
-		li:hover
-			a
-				text-decoration: underline
 	.hamb
 		position: absolute
 		right: 10px
 		display: none
+
+// .menu
+// 	display: block
+// 	float: left
+// 	position: relative
+// .menu::before
+// 	content: ""
+// 	position: absolute
+// 	top: 0
+// 	left: 0
+// 	width: 100%
+// 	height: 100%
+	
+
+ul.mobile
+	list-style: none
+	margin: 0
+	padding-left: 0
+	float: left
+
+	a
+		text-decoration: none
+		color: #fff
+		display: block
+		padding: 6px 12px
+		height: 40px
+		white-space: nowrap;
+	li
+		float: left			
+	li.active
+		a
+			background: #16C8AB
+	li:hover
+		a
+			text-decoration: underline
+
 
 
 .slogan
 	top: 50%
 	position: absolute
 	transform: translateY(-50%)
-	padding-left: 60px
+	padding-left: 50px
 	h1
 		font-size: 3em
 		margin-bottom: 10px
@@ -165,6 +186,33 @@ b, strong
 	background-repeat: no-repeat
 	background-size: cover
 
+.footer
+	color: #FFF
+	//padding: 10px
+	.phone
+		display: inline-block
+		margin-left: 30px
+		.phone-text
+			display: inline-block
+			margin-left: 3px
+	.email
+		display: inline-block
+		margin-left: 30px
+		.email-text
+			display: inline-block
+			margin-left: 3px
+
+.footer
+	position: absolute
+	bottom: 0
+	width: 100%
+	height: 40px /* Set the fixed height of the footer here */
+	line-height: 40px /* Vertically center the text there */
+.footer-bg
+	background: $accent
+  
+
+
 
 .overlay
     width: 100%
@@ -174,6 +222,30 @@ b, strong
     display: none
     top: 0
     left: 0
+
+
+
+
+// download
+
+.download-desc
+	margin: 20px
+.download-main
+	margin: 10px
+	margin-top: 110px
+	text-align: center
+	h1
+		font-size: 2.1rem
+	.btn-group
+		margin-top: 10px
+		.btn, a
+			font-size: 24px
+.old-version
+	//ont-size: 1.2rem
+
+h4.download
+	margin-bottom: 20px
+	margin-bottom: 20px
 
 
 

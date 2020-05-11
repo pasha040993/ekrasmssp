@@ -22,12 +22,16 @@ $(function() {
 		//$(this).hide();
 		$('.overlay').fadeIn();
 	});
-	$('.mobile span, .overlay').click(function(){
+	$('.mobile span, .overlay, ul.mobile::before').click(function(){
 		$('.mobile').animate({
-			right: -300
+			right: -250
 		});
 		//$('.hamb').show();
 		$hamburger.toggleClass("is-active");
 		$('.overlay').fadeOut();
 	});
+
+
+
+	
 });

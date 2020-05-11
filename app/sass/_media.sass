@@ -23,16 +23,18 @@
 
 
 
-+media-breakpoint-down(lg)
 
 // ≥1200px
 +media-breakpoint-down(lg)
 
+	.download-main
+		margin-top: 30px
+
 // ≥992px
 +media-breakpoint-down(md)
 
-	.mobile
-		width: 300px
+	ul.mobile
+		width: 250px
 		height: 100vh
 		background: #333
 		display: -webkit-flex
@@ -43,16 +45,33 @@
 		flex-direction: column
 		position: fixed
 		top: 0
-		right: -300px
-		padding: 15px
-		font-size: 25px
+		right: -250px
+		padding: 15px 15px 15px 0px
+		font-size: 20px
 		z-index: 2
 		color: #fff
-	.mobile li
-		margin-bottom: 20px	
-	.mobile li:last-child
+		
+	// ul.mobile::before
+	// 	content: "\f00d"
+	// 	position: absolute
+	// 	top: 0
+	// 	right: 0px
+	// 	width: 41px
+	// 	height: 38px
+	// 	font-family: FontAwesome
+	// 	font-size: 20px
+	// 	text-align: center
+	// 	margin-top: 5px
+	// 	display: block
+		
+	ul.mobile li
+		margin-bottom: 10px	
+	ul.mobile li:last-child
 		margin-bottom: 0px	
-	.mobile span
+	ul.mobile li.active a
+		background: #333
+		color: #16C8AB
+	ul.mobile span
 		display: block
 		position: absolute
 		top: -5px
@@ -73,6 +92,14 @@
 		margin-bottom: 20px
 	.starter::before
 		opacity: .5
+	.slogan
+		h1
+			font-size: 2.4em
+		h3
+			font-size: 1.65em
+	.download-main
+		h1
+    		font-size: 1.6rem
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -97,6 +124,14 @@
 			font-size: 2em
 		h3
 			font-size: 1.35em
+	.download-main
+		h1
+    		font-size: 1.4rem
+
+@media only screen and (max-width : 320px)
+	.footer
+    	position: fixed
+		
 
 
 /*==========  Mobile First  ==========*/

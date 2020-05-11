@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>EKRASMS-SP</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,16 +41,20 @@
 					<div class="space"></div>
 					<div class="header">
 						<div class="logoContainer">
-							<img class="logo" src="img/_src/logo.png" alt="EKRASMS-SP">
+							<a href="index.html">
+								<img class="logo" src="img/_src/logo.png" alt="EKRASMS-SP">
+							</a>
 						</div>
-						<ul class="mobile">
-							<li class="active"><a href="#">Главная</a></li>
-							<li><a href="#">Скачать</a></li>
-							<li><a href="#">Документация</a></li>
-							<li><a href="#">Вопрос/Ответ</a></li>
-							<li><a href="#">Информационные письма</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
+						<div class="menu">
+							<ul class="mobile">
+								<li class="active"><a href="index.html">Главная</a></li>
+								<li><a href="download.html">Скачать</a></li>
+								<li><a href="#">Документация</a></li>
+								<li><a href="#">Вопрос/Ответ</a></li>
+								<li><a href="#">Информационные письма</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
 						<div class="hamb">
 							<div class="hamburger hamburger--collapse">
 								<div class="hamburger-box">
@@ -67,7 +71,7 @@
 						<div class="slogan col-sm-12 col-md-8 col-lg-5">
 							<h1>EKRASMS-SP</h1>
 							<h3>Программное обеспечение для работы с терминалами серии ЭКРА 200 и ЭКРА100</h3>
-							<a href="#" class="btn btn-primary btn-save">Скачать</a>
+							<a href="download.html" class="btn btn-primary btn-save">Скачать</a>
 						</div>
 					</div>
 
@@ -87,67 +91,127 @@
 			</div>
 		</div>
 
-		<div class="row row-product">
-			<div class="col-sm-12 col-md-6 product-column">
-				<div class="productName">Конфигуратор</div>
-				<div class="productDesc">Программа предназначена для создания и off-line редактирования конфигураций терминалов серии 100 и ЭКРА 200.</div>
-			</div>
-
-			<div class="col-sm-12 col-md-6 productImgContainer">
-				<div class="productImg" style="background-image: url(img/_src/czggenerator.png)"></div>
-			</div>
-		</div>
-
-		<div class="space"></div>
-
-		<div class="row row-product">
-			<div class="col-sm-12 col-md-6 order-md-12 product-column">
-				<div class="productName">АРМ-релейщика</div>
-				<div class="productDesc">
-					Программа  предназначена для:
-					<ul>
-						<li>просмотра текущих величин аналоговых сигналов цепей;</li>
-						<li>отображения векторных диаграмм токов и напряжений;</li>
-						<li>просмотра состояний дискретных сигналов;</li>
-						<li>просмотра, изменение уставок и параметров терминалов;</li>
-						<li>сохранения во внешних файлах всех параметров терминалов и событий в них;</li>
-						<li>просмотра регистратора событий;</li>
-						<li>скачивания осциллограмм;</li>
-						<li>просмотра состояния логики.</li>
-					</ul>
-				</div>	
-			</div>
-
-			<div class="col-sm-12 col-md-6 order-md-1 productImgContainer" >
-				<div class="productImg" style="background-image: url(img/_src/arm.png)"></div>
-			</div>
-		</div>
-
-		<div class="space"></div>
-
-		<div class="row row-product">
-			<div class="col-sm-12 col-md-6 product-column">
-				<div class="productName">Сервер связи</div>
-				<div class="productDesc">Программа обеспечивает связь между терминалами (шкафами) и программой АРМ-релейщика.
-					В том числе в автоматическом режиме может выполнять следующие задачи:
-					<ul>
-						<li>синхронизация времени на терминалах;</li>
-						<li>автоматическая загрузка осциллограмм;</li>
-						<li>является источником данных для системы EKRASCADA.</li>
-					</ul>
+		<div class="row-product">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<div class="product-column">
+						<div class="productName">Конфигуратор</div>
+						<div class="productDesc">Программа предназначена для создания и off-line редактирования конфигураций терминалов серии 100 и ЭКРА 200.</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="productImgContainer">
+						<div class="productImg" style="background-image: url(img/_src/czggenerator.png)"></div>
+					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="col-sm-12 col-md-6 productImgContainer">
-				<div class="productImg" style="background-image: url(img/_src/server.png)"></div>
+		<div class="space"></div>
+
+		<div class="row-product">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 order-md-12">
+					<div class="product-column">
+						<div class="productName">АРМ-релейщика</div>
+						<div class="productDesc">Программа  предназначена для:
+							<ul>
+								<li>просмотра текущих величин аналоговых сигналов цепей;</li>
+								<li>отображения векторных диаграмм токов и напряжений;</li>
+								<li>просмотра состояний дискретных сигналов;</li>
+								<li>просмотра, изменение уставок и параметров терминалов;</li>
+								<li>сохранения во внешних файлах всех параметров терминалов и событий в них;</li>
+								<li>просмотра регистратора событий;</li>
+								<li>скачивания осциллограмм;</li>
+								<li>просмотра состояния логики.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 order-md-1">
+					<div class="productImgContainer">
+						<div class="productImg" style="background-image: url(img/_src/arm.png)"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="space"></div>
+
+		<div class="row-product">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<div class="product-column">
+						<div class="productName">Сервер связи</div>
+						<div class="productDesc">Программа обеспечивает связь между терминалами (шкафами) и программой АРМ-релейщика.
+							В том числе в автоматическом режиме может выполнять следующие задачи:
+							<ul>
+								<li>синхронизация времени на терминалах;</li>
+								<li>автоматическая загрузка осциллограмм;</li>
+								<li>является источником данных для системы EKRASCADA.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="productImgContainer">
+						<div class="productImg" style="background-image: url(img/_src/server.png)"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="space"></div>
 
 
-		<span class="overlay"></span>
+		<!-- <div class="footer">
+			<div class="row">
+				<div class="col-12">
+					<div class="phone">
+						<i class="fa fa-phone"></i>
+						<div class="phone-text">
+							+7 (8352) 220-130 (доб. 1410)
+						</div>
+					</div>
+					<div class="email">
+						<i class="fa fa-envelope-o"></i>
+						<div class="email-text">
+							ekra3@ekra.ru
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+
+
+		
 	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer-bg">
+						<div class="phone">
+							<i class="fa fa-phone"></i>
+							<div class="phone-text">
+								+7 (8352) 220-130 (доб. 1410)
+							</div>
+						</div>
+						<div class="email">
+							<i class="fa fa-envelope-o"></i>
+							<div class="email-text">
+								ekra3@ekra.ru
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<span class="overlay"></span>
 
 
 	<script src="js/scripts.min.js"></script>
