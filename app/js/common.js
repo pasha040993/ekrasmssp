@@ -32,6 +32,6 @@ $(function() {
 	});
 
 
-
+	$('body').scrollspy({ target: '#list-example' })
 	
 });
